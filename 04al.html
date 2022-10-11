@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 设置整个浏览器的背景颜色---用body标签 */
+        /* 设置整个浏览器---body */
+        body{
+            background-color: #f5f5f5;
+        }
+        .box {
+            width: 234px;
+            height: 300px;
+            background-color: #ffffff;
+            /* margin: 0 auto 是水平居中效果 */
+            margin: 0 auto;
+            /* 让内部的图片和文本居中对齐---所以text-align不一定非要使用在文本上 */
+            text-align: center;
+        }
+        .pic {
+            width: 170px;
+            /* 高不用设置---img会自动根据width进行等比例缩放---怪不得没给高度 */
+            /* 让图片居中对齐的方法---放到块元素中---display：block---margin: 0 auto */
+            /* display: block;
+            margin: 0 auto; */
+        }
+        .product {
+            margin-top: 2em;
+            /* 给盒子设置height可以让文字之间有一定的间距 */
+            height: 25px;
+            font-size: 14px;
+        }
+        .info {
+            height: 30px;
+            font-size: 12px;
+            color: #cccccc;
+        }
+        .price {
+            font-size: 14px;
+            color: #ffa500;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设计思路---外到内---上往下 -->
+    <div class="box">
+        <img src="./css/images/car.png" alt="" class="pic">
+        <!-- 三个文本用三个盒子包裹起来 -->
+        <div class="product">九号平衡车</div>
+        <div class="info">成年人的玩具</div>
+        <div class="price">1999元</div>
+        
+    </div>
+</body>
+</html>

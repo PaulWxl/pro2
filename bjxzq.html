@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 把div和p标签设置为红色（以节省代码的方式） -->
+    <style>
+        /* 并集选择器---同时选择多个标签---用逗号连接起来---可以并多个---不一样只能是两个---注意都要用逗号隔开*/
+        /* 并集选择器中的每组可以是基础或者是复合选择器(后代 子代 并集)---只要用逗号隔开即可 */
+        /* 并集选择器一般每组选择器一行一个---选择器1，换行 */
+        div,
+        p {
+            color: #6c99c5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 并集选择器---同时选择多组标签 设置相同的样式 -->
+    <div>我是div</div>
+    <div>我也是一个div</div>
+    <p>我是p</p>
+    <p>我也是一个p</p>
+    <h1>我是h1</h1>
+    <h1>我也是一个h1</h1>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子代选择器语法---父选择器 > 子选择器 */
+        /* 子代选择器---只想选中小可爱---又不想改变html结构 */
+        .father > p {
+            color: #6c99c5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 子代选择器---和后代选择器的区别是只包含儿子 其他后代不管 -->
+    <div class="father">
+        <p>小可爱</p>
+        <div>
+            <p>小姐姐</p>
+        </div>
+    </div>
+    <p>大可爱</p>
+</body>
+</html>

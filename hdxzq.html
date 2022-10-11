@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 在.father 的所有后代中找p标签---注意不只是儿子 */
+        /* 注意后代选择器必须加上空格 */
+        /* 后代选择器用的还是比较多的 */
+        .father p{
+            color: #f00;
+        }
+         /* 在.father 的所有后代中找div标签 再在div的所有后代中找p标签---注意不只是儿子 */
+        .father div p {
+            color:#6c99c5;
+        }
+    </style>
+</head>
+<body>
+    <!-- 选择器进阶---复合选择器的规则---使用复合选择器在HTML中定位元素 -->
+    <!-- 复合选择器---并集选择器---交集选择器---Emmer语法---hover伪类选择器 -->
+    <!-- 后代选择器---儿子 孙子 重孙子 --- 选择器1 选择器2-->
+
+    <div class="father" style="color: #6c99c5;">
+        <p>小姐姐</p>
+        <div>
+            <p>小帅哥</p>
+        </div>
+    </div>
+    <p style="color: #638da5;">小可爱</p>
+</body>
+</html>
